@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3f2cd5ad9.js" crossorigin="anonymous"></script>
+    <style>
+        .main_header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 288;
+ }
+
+.logo_image{
+    background-color: black;
+}
+.logo_image img{
+    width:150px;
+    height: 100px;
+    margin-left: 0em;
+}
+
+.logo_image .btn{
+    border-radius: 4px;
+}
+
+.logo_image i{
+    color: white;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+  }
+
+.pages{
+    color: white;
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+.pages i{
+    float: right;
+}
+
+.pages a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.pages .product{
+    background-color: black;
+    color: white;
+}
+
+
+.items {
+        margin-top: 10em;
+        border: 2px solid black;
+        float: left;
+        width: 180px;}
+
+.pages .drop a{
+    color:black;
+}
+.items img {
+        width: 100%;}
+
+.desc {
+        padding: 15px;
+        text-align: center;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <div class="container-fluid logo_image">
+                <a href="e-commerce.html"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.logolynx.com%2Fimages%2Flogolynx%2F4c%2F4c1e9d4c49f1ee74f3bb871a181fea10.png&f=1&nofb=1&ipt=d8496067d3f500c93ec3339ddeb6f3a2bff842d3bcaa3b1d2a603e4319fe46fc&ipo=images" alt="logo"></a>
+                <div class="pages">
+                    <a href="e-commerce.html">Home</a>
+                    <button class="product btn-primary dropdown-toggle" data-bs-toggle="dropdown">products</button> 
+                    <div class="drop dropdown-menu">
+                        <a class="dropdown-item" href="blender.html">Cleanblend Smoothie Blender</a>
+                        <a class="dropdown-item" href="dishwasher.html">ecozy Portable Countertop Dishwasher</a>
+                    </div>
+                    <button class="btn btn-danger"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+            
+                </div> 
+            </div>
+        </div>
+    </header>
+
+<div class="items">
+    <div class="pic">
+       <a><img src="https://i5.walmartimages.com/asr/6e351067-7947-49e0-81c8-f286645a423b.677a30b8a6b742c68b53de979ab5fd8a.png" alt="beach"></a>
+        <div class="desc">
+            <p>ecozy Portable Countertop Dishwasher, Mini Dishwasher with a Built-in 5L Water Tank, No Hookup Needed, 5 Washing Programs, Extra Dry Function for Apartments, Camping and RV, White</p>
+            <p>price: 270$</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

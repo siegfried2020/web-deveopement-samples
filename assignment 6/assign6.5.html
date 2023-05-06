@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generate random number</title>
+</head>
+<body>
+    <label>Highest number:</label>
+    <input type="text" id="num1">
+    <br><br>
+    
+    <label>Lowest number:</label>
+    <input type="text" id="num2">
+<br><br>
+    <label>Guess number:</label>
+    <input type="text" id="guess">
+    
+    <button onclick="generate()">click</button>
+    <p id="message"></p>
+    
+    <script type="text/javascript">
+        function generate(){      
+            var max = parseInt(document.getElementById("num1").value);
+            var min = parseInt(document.getElementById("num2").value);
+            var guess_num=parseInt(document.getElementById("guess").value);
+            const a = Math.floor(Math.random() * (max - min + 1)) + min;
+    
+            var message = document.getElementById("message");
+
+            if(a>guess_num){
+                message.innerHTML = "too low";    
+            }else if(a<guess_num){
+                
+            message.innerHTML = "too high";
+            }
+             else if(a==guess_num){
+            message.innerHTML = "correct guess";
+            }
+        }
+    
+    </script>
+</body>
+</html>
